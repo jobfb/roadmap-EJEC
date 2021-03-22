@@ -1,0 +1,182 @@
+h3{
+
+    color: rgb(45, 10, 243);
+}
+
+.segundo-h3{
+
+color: orange; 
+
+}
+
+#terceiro-h3{
+ 
+    color:blueviolet;
+
+}
+*{
+box-sizing:border-box;
+}
+body{ 
+
+    
+    font-family: 'Courier New', Courier, monospace;  /* fonte   , pesquisar google fonts*/
+    font-size: 20px;
+    font-weight:bold;     /* negrito*/
+    margin: 0;
+}
+
+.container{
+    background-color:#333;
+    color: #eee;
+    width: 960px;/*LARGURA*/
+    box-sizing: border-box;/*width parte 2*/
+    margin:auto;/*margem igual dos dois lados */
+    padding: 20px;/*espaçamento, posso escolher qual lado colocar tipo padding-top(right,left,bottom)*/
+    border: 3px solid red; /*posso escolher qual lado colocar tipo border-top(right,left,bottom)*/
+}
+
+.banana{
+    background-color:#333;
+    color: #eee;
+    width: 80%;/*LARGURA*/
+    margin:auto;/*margem igual dos dois lados */
+    padding: 20px;/*espaçamento*/
+    border: 3px solid red; 
+
+
+
+}
+
+.main-aside ul{
+    list-style: none;
+    text-align: center;
+    padding:0;
+
+
+}
+
+.main-aside h2{
+    text-align: center;
+}
+.main-aside ul a {
+    text-decoration: none;
+    color: black;
+
+}
+.main-aside ul a:hover{
+    color:red;
+}
+.main-aside h2:hover{
+    color:yellow;
+    cursor: pointer;
+
+}
+.main-aside ul a:visited{
+    color:green;
+}
+.main-form{
+    padding-left: 20px;
+
+
+}
+.form-group{
+    padding-bottom: 10px;
+
+}
+.form-group label{
+   display: block; 
+}
+
+.form-group input{
+    padding: 10px;
+    width: 100%;
+}
+.button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+} 
+.box{
+width: 80%;
+margin: auto;    
+}
+
+/*static = segue o fluxo da pagina/  bottom, top, right , left n aplicaveis */
+/*relative= elemento é posicionado em relação a posição normal/ bottom, top ... funcionam  */
+/* absolute = posicionado em relação ao elemento relative(pai) mais proximo(dentro), caso n tenha elemnto relative ele é posicionado em relação ao body*/
+/*fixed = elemento posicionado em relação ao viewpoint (visão do usuario )/ top,bottom... funcionam/ o elemento sempre fica na mesma posiçãon importa se a pagina for rolada  */
+/*sticky = elemento é posicionado em relação ao scroll do usuario / top,bottom ...  funcionam/ fica na posição até o rolamento e dps acompanha  */
+
+.relative{
+ position: relative;
+ border: 3px solid #333;
+height: 500px;
+border-radius: 7px;
+}
+.absolute{
+position: absolute;
+bottom: 0px; 
+}
+
+.absolute h1{
+    margin: 0;
+}
+
+/*barra de navegação*/ 
+
+#main-navbar{
+    background: #333;
+    color: #eee;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0px;
+
+} 
+/*botão fixo*/
+
+.fixed-button{
+     background: #333;
+     color: #fff;
+     border-radius: 50px;
+     width: 50px ;
+     height: 50px;
+     position: fixed;
+     bottom: 0px;
+     right: 0px;
+     margin: 20px;
+}
+
+
+/*pseudo classes*/
+
+/*:first-child = seleciona primeiro elemento filho */
+/*:last-child = seleciona o ultimo elemento filho*/
+/*:nth-child(n) = seleciona o n elemento filho */
+
+/*categorias*/
+
+.box-categories ul {
+    list-style: none;
+}
+/*.box-categories ul li:first-child {
+    color:red;
+}
+.box-categories ul li:last-child{
+    color:indigo;
+}
+.box-categories ul li:nth-child(3){
+    color: yellowgreen;
+}*/
+
+.box-categories ul li:nth-last-child(even){
+color: red;
+}
+.box-categories ul li:nth-last-child(odd){
+
+    color: hotpink;
+
+}

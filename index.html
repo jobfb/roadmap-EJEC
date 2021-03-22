@@ -1,156 +1,101 @@
 <!DOCTYPE html>
-<!--
-    
-    
-    hyper texto == aceita link,imagens audio etc
-    Markup = marcações faitas com tags ex:HTML
-    language: linguagem 
-
-
-
-
-
-
-
-
--->
-
-
-<!--html -->
-<!--tag HTML-->
+<html lang="en">
 
 <head>
-    <!--RESPONSAVEL POR RECEBER CONF-->
-    <title> Curso de </title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Curso css</title>
+    <style>
+        h2 {
+            color: green;
+        }
+    </style>
 
 </head>
 
 <body>
-    <nav>
+  <nav id="main-navbar">
+      <h1>Barra de navegação</h1>
+
+  </nav>
+    <h1 style="color: red"> ola mundo</h1>
+    <div class="container">
+        <h1>titulo1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt qui saepe, ea maxime impedit voluptates, in
+            sequi illum delectus, reiciendis cupiditate repellat inventore libero quae? Nihil facilis sunt
+            exercitationem sequi.</p>
+
+    </div>
+    <div class="banana">
+
+        <h2>titulo2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis beatae quas fugiat aliquam odit eius
+            voluptatem enim explicabo? Inventore deleniti unde saepe accusantium dignissimos ipsam hic illo debitis
+            nesciunt
+            molestiae!</p>
+
+    </div>
+    <h2> ola mundo</h2>
+    <h3>css em outro arquivo</h3>
+    <h3 class="segundo-h3">css em outro arquivo</h3>
+    <!--usa class para selecionar varios elementos -->
+    <h3 id="terceiro-h3">css em outro arquivo</h3> <!-- usa id para selecionar apenas um elemento-->
+    <aside class="main-aside">
+        <h2>redes sociais</h2>
         <ul>
-            <LI><a href="blog.html"></a>Blog</LI>
+            <li><a href="https://www.reddit.com" target="__blank"> reddit</a></li>
+            <li><a href="https://www.youtube.com/" target="__blank"> youtube</a></li>
+
         </ul>
-</nav>
-    <!--cabeçalhos-->
-    <h1>cabeçalhos 1</h1>
-    <h2>cabeçalhos 2</h2>
-    <h3>cabeçalhos 3</h3>
-    <h4>cabeçalhos 4</h4>
-    <h5>cabeçalhos 5</h5>
-    <h6>cabeçalhos 6</h6>
 
-    <!-- paragrafos-->
-    <p> Lorem ipsum dolor sit <strong>, consectetur adipisicing elit. Rerum, qui</strong>.</p>
-
-
-    <!-- line(mesma linha ) == <span>,<img>,<a>-->
-    <!--block(inicia uma nova linha)== <div>, <h1>, <h6> , <form> -->
-    <!-- strong == negrito  (line)-->
-    <!-- em == italico  (line)-->
-
-
-    <!-- link -->
-
-    <a href="https://google.com" target="__blank">Google</a>
-
-
-    <div class="dicasParaDevs"></div>
-
-    <!-- tables-->
-
-    <table>
-        <thead>
-            <th> nome</th>
-            <th>email</th>
-            <th>idade</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>job ferreira</td>
-                <td>jobbjunior@hotmail.com</td>
-                <td>18</td>
-
-            </tr>
-            <tr>
-                <td>ana ferreira</td>
-                <td>ana@hotmail.com</td>
-                <td>18</td>
-
-            </tr>
-            <tr>
-                <td>eduardo ferreira</td>
-                <td>eduardo@hotmail.com</td>
-                <td>18</td>
-
-            </tr>
-
-        </tbody>
-    </table>
-
-    <br>
-    <hr>
-    <br>
-
-    <!--formulario-->
-    <form action="form.php" method="POST">
-        <div></div><label>primeiro nome</label>
+    </aside>
+    
+    <div class="box">
+    <form action="form.php" method="POST" class="main-form">
+        <div class="form-group">
+            <label>primeiro nome</label>
         <input type="text" Placeholder="Entre seu primeiro nome">
         </div>
-        <div><label>segundo nome</label>
+
+        <div class="form-group">
+            <label>segundo nome</label>
             <input type="text">
         </div>
-        <div><label>Email</label>
+
+        <div class="form-group">
+            <label>Email</label>
             <input type="email">
         </div>
-        <div><label>genero</label>
-            <select>
-                <option value="maculino "> Masculino</option>
-                <option value="feminino "> Feminino</option>
-            </select>
-            <div><label>Data de nascimento</label>
-                <input type="date" />
 
-                <div>
-                    <label>Senha</label>
-                    <input type="passaword" />
-                </div>
-                <div>
-                    <label>mensagem</label>
-                    <textarea name="mensagem"></textarea>
+        <div class="form-group">
+            <label>mensagem</label>
+            <textarea name="mensagem"></textarea>
 
-                </div>
+        </div>
 
-                <input type="submit" />
+        <input class="button" type="submit" />
+
 
     </form>
-
-    <!--botçoes-->
-
-    <button>click me </button>
-
-    <br>
-    <!--imagens-->
-
-    <img src="./unknown.png" alt="imagem do exemplo" width="100" height="50">
-
-
-    <!--blockquote-->
-    <blockquote cite="dicasParaDevs.com.br">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, maxime minima! Ipsa veritatis nihil sequi
-        debitis eveniet perspiciatis esse maiores.
-
-
-
-
-    </blockquote>
-    <p>Eu amo a <abbr title="World Wide Web">WWW</abbr>!</p>
-
-
-    <p>Tutorialfeito por <cite>dicasParaDevs</cite></p>
-
-
+</div>
+<div class="relative">
+    <div class = "absolute">    
+        <h1>ola mundo :] </h1>
+    </div>
+</div>
+<button class="fixed-button"></button>
+<div class="box-categories">
+   <h2>categorias</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+</div>
 </body>
-
 
 </html>
